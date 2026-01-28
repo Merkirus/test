@@ -1,0 +1,65 @@
+.drawing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toolbar button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    color: black;
+}
+
+.toolbar button:hover {
+    background-color: #e0e0e0;
+}
+
+.toolbar button.active {
+    border-color: #007bff;
+    background-color: #e0e8ff;
+    font-weight: bold;
+}
+
+/* Color picker */
+.color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: white;
+}
+
+.color-picker-wrapper input[type="color"] {
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: none;
+}
+
+
+canvas {
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #ffffff;
+    image-rendering: pixelated;
+    cursor: crosshair;
+    max-width: 100%;
+    max-height: 100%;
+}
